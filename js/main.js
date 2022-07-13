@@ -1,5 +1,6 @@
 var canvas, ctx;
 var mouseX, mouseY, mouseDown = 0;
+var touchX,touchY;
 
 // Function for interacting with canvas
 function init() 
@@ -19,7 +20,9 @@ function init()
     {
         canvas.addEventListener('mousedown', canvas_mouseDown, false);          
         canvas.addEventListener('mousemove', canvas_mouseMove, false);          
-        canvas.addEventListener('mouseup', canvas_mouseUp, false);           
+        canvas.addEventListener('mouseup', canvas_mouseUp, false);   
+        canvas.addEventListener('touchstart', canvas_touchStart,false);
+        canvas.addEventListener('touchmove', canvas_touchMove, false);        
     }
 }
 
@@ -99,6 +102,47 @@ function getMousePos(e)
       mouseX = e.layerX;        
       mouseY = e.layerY;    
     } 
+}
+
+
+// Touch event handler (basically for mobile users)
+
+// it is activated when user touches the touchpad
+// it calls draw func with false to note position not to draw
+function canvas_touchStart() 
+{     
+    getTouchPos();    
+    draw(ctx, touchX, touchY, false);    
+    // this prevents scrolling of screen when user draws
+    event.preventDefault();
+}
+
+
+// it is activated when user drags in sketchpad
+// it calls draw with true flag to enable drawing
+function canvas_touchMove(e)
+{     
+    getTouchPos(e);    
+    draw(ctx, touchX, touchY, true);    
+    event.preventDefault();
+}
+
+// it is used to find point in the sketchpad where user has touched
+function getTouchPos(e) 
+{    
+    if (!e)        
+    var e = event;     
+    if(e.touches)
+    {   
+        // it length is used to find  
+        // how many fingers has touched    
+      if (e.touches.length == 1) 
+      {            
+        var touch = e.touches[0];            
+        touchX = touch.pageX - touch.target.offsetLeft;               
+        touchY = touch.pageY - touch.target.offsetTop;        
+      }
+    }
 }
 
 // Clearing the sketchpad
