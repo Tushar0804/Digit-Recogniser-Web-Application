@@ -2,6 +2,8 @@
 
 This project aims to develop a Handwritten Digit Recognizer using Convolutional Neural Networks (CNN) with the help of TensorFlow and Keras libraries. The CNN model is trained and tested on the MNIST dataset, which consists of 60,000 handwritten images of digits ranging from 0 to 9. The project also includes a web application deployed on the Heroku platform to allow users to draw digits and recognize them in real-time.
 
+The Application has been deployed at the following URL: https://tushar0804.github.io/Handwritten-Digit-Recognizer/
+
 ## Dataset
 
 The MNIST dataset is used for training and testing the model. It includes 60,000 28x28 grayscale images of digits, along with a test set of 10,000 images. It is a widely-used dataset in computer vision and serves as a benchmark for classification algorithms. More details about the dataset can be found [here](http://yann.lecun.com/exdb/mnist/index.html).
@@ -36,10 +38,6 @@ The model is trained on 50,000 images and validated on 10,000 images from the MN
 ## Deployment of the Model
 
 A web application has been developed using HTML, CSS, and JavaScript for the deployment of the model. The application allows users to draw any digit on a canvas and predict the digit using the trained model. The canvas image is preprocessed, fed into the model, and the predicted digit is displayed on the screen.
-
-## Conclusion
-
-This project successfully develops a Handwritten Digit Recognizer using CNN and achieves high accuracy in recognizing handwritten digits. The CNN model is trained and tested on the MNIST dataset. The project showcases the application of deep learning techniques and demonstrates the potential for real-world applications such as assisting visually impaired individuals, human-robot interaction, and automatic data entry. This project serves as a foundation for further exploration of artificial intelligence and computer vision.
 
 ## Contributing
 
