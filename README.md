@@ -40,3 +40,18 @@ A web application has been developed using HTML, CSS, and JavaScript for the dep
 ## Conclusion
 
 This project successfully develops a Handwritten Digit Recognizer using CNN and achieves high accuracy in recognizing handwritten digits. The CNN model is trained and tested on the MNIST dataset. The project showcases the application of deep learning techniques and demonstrates the potential for real-world applications such as assisting visually impaired individuals, human-robot interaction, and automatic data entry. This project serves as a foundation for further exploration of artificial intelligence and computer vision.
+
+## Contributing
+
+Contributions are welcome! If you want to contribute to this project, please follow these steps:
+
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make the necessary changes and commit them.
+- Submit a pull request, clearly explaining the changes you made.
+
+Please ensure that your contributions adhere to the project's coding conventions and are accompanied by appropriate tests.
+
+## Contact
+
+If you have any questions, suggestions, or issues regarding this project, please feel free to [contact me](mailto:tusharsharma0804@gmail.com).
