@@ -62,6 +62,7 @@ body{
 .button{
     margin: 20px;
 }
+
 .btn{
     padding: 10px;
     width: 100px;
@@ -72,13 +73,16 @@ body{
     border-radius: 20px;    
     color:rgb(6, 23, 52);    
 }
+
 .btn:hover{   
     background-color: rgb(6 23  52);
     color: rgb(102, 222, 227); 
 }
+
 #predict_button{
     margin-right: 20px;   
 }
+
 #clear_button{
     margin-left: 20px;    
 }
@@ -103,7 +107,6 @@ body{
     padding-top: 10px;
     font-size: 20px;    
 }
-
 
 .hr1{
     border: 2px solid rgb(6, 23, 52);
@@ -131,14 +134,16 @@ body{
     background-color: rgb(6 23  52);
     color: white;
 }
+
 #developer{
     flex-basis: 100%;
     text-align: center;
 }
+
 #linkedin{    
     padding-right: 20px;    
 }
+
 #github{
     padding-left: 20px;
 }
-    
