@@ -2,33 +2,32 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lora', serif;
-    background-color: rgb(250, 253, 253);
+    background-color: #FFFFF0;
     color: rgb(6 23  52);   
 }
 
 .title{
     margin: 0px;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     font-size: 50px;
     font-style: italic;
-    background-color: rgb(6 23  52);
-    color: rgb(102, 222, 227);  
+    background-color: #BCB88A;
+    border-bottom: 2px solid black;
 }
 
 .welcome{
-    margin: 0px;
-    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    line-height: 2;
     text-align: center;
     font-size: 25px;
     font-style: oblique;
-    background-color: rgb(102, 222, 227);
-    
 }
 
 #content{
     margin: 0px;
-    padding: 2% 15%;
+    padding: 0% 15%;
     min-height: 500px;
 }
 
@@ -55,34 +54,29 @@ body{
 }
 
 #myCanvas{
-    border: 3px solid rgb(102, 222, 227);
-    background-color: rgb(6 23  52);
+    border: 3px solid #BCB88A;
+    background-color: black;
 }
 
 .button{
     margin: 20px;
 }
-
 .btn{
     padding: 10px;
     width: 100px;
     font-size: 15px;
     font-weight: bold;    
-    background-color:rgb(102, 222, 227);
-    border: 1px solid rgb(102, 222, 227);
-    border-radius: 20px;    
-    color:rgb(6, 23, 52);    
+    background-color:#BCB88A;
+    border: 1px solid #BCB88A;
+    border-radius: 20px;        
 }
-
 .btn:hover{   
-    background-color: rgb(6 23  52);
-    color: rgb(102, 222, 227); 
+    background-color: #BCB88A;
+    border: 2px solid black;
 }
-
 #predict_button{
     margin-right: 20px;   
 }
-
 #clear_button{
     margin-left: 20px;    
 }
@@ -107,6 +101,7 @@ body{
     padding-top: 10px;
     font-size: 20px;    
 }
+
 
 .hr1{
     border: 2px solid rgb(6, 23, 52);
@@ -134,16 +129,13 @@ body{
     background-color: rgb(6 23  52);
     color: white;
 }
-
 #developer{
     flex-basis: 100%;
     text-align: center;
 }
-
 #linkedin{    
     padding-right: 20px;    
 }
-
 #github{
     padding-left: 20px;
 }
