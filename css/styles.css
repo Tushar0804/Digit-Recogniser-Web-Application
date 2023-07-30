@@ -126,7 +126,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(6 23  52);
+    background-color: black;
     color: white;
 }
 #developer{
