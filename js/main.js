@@ -11,7 +11,7 @@ function init()
 
     // Now we have context of canvas on ctx
     // we will fill ctx background with blue color
-    ctx.fillStyle = "rgb(6, 23, 52)";
+    ctx.fillStyle = "rgb(0,0,0)";
     
     // It draws a fill rect with x=0,y=0 as start 
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -150,7 +150,7 @@ document.getElementById('clear_button').addEventListener("click",
     function()
     {  
         ctx.clearRect(0, 0, canvas.width, canvas.height);  
-        ctx.fillStyle = "rgb(6, 23, 52)"; 
+        ctx.fillStyle = "rgb(0,0,0)"; 
         ctx.fillRect(0, 0, canvas.width, canvas.height);
     }
 );
